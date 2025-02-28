@@ -5,7 +5,7 @@ const InitialGameBoard = [
 ];
 export default function GameBoard({ onSelectSquare, turns }) {
   let gameBoard = InitialGameBoard;
-  for (const turn in turns) {
+  for (const turn of turns) {
     const { square, player } = turn;
     const { row, col } = square;
 
